@@ -1,4 +1,26 @@
 <p>
-  <strong>Title:</strong>
+  <strong>Title</strong><br>
   <%= @job.title %>
 </p>
+<p>
+  <strong>Dates of Commitment</strong><br>
+  <%= @job.start_date %> to <%= @job.end_date %>
+</p>
+<p>
+  <strong>Location</strong><br>
+  <%= @job.location %>
+</p>
+<p>
+  <strong>Event type</strong><br>
+  <%= @job.event_type %>
+</p>
+<p>
+  <strong>Requirements</strong><br>
+  <%= @job.requirements %>
+</p>
+<p>
+  <strong>Description</strong><br>
+  <%= @job.description %>
+</p><br>
+
+<%= link_to "View all jobs", jobs_path %>
