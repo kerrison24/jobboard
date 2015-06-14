@@ -1,6 +1,7 @@
-<h1>Create a Job Ad</h1>
+<h1>Edit Job</h1>
 
-<%= form_for :job, url: jobs_path do |f| %>
+<%= form_for :job, url: job_path(@job), method: :patch do |f| %>
+
   <% if @job.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -44,4 +45,4 @@
   <%= f.submit %>
 <% end %><br>
 
-<%= link_to "back", jobs_path %>
+<%= link_to "Back", jobs_path %>
