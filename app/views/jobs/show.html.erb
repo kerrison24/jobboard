@@ -23,4 +23,5 @@
   <%= @job.description %>
 </p><br>
 <%= link_to "Edit", edit_job_path(@job) %><br>
+<%= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure?" } %><br>
 <%= link_to "View all jobs", jobs_path %>
